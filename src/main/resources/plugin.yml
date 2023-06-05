@@ -1,0 +1,6 @@
+name: EmptyShutdown
+version: '${project.version}'
+main: net.daechler.emptyshutdown.EmptyShutdown
+api-version: 1.19
+authors: [Daechler]
+description: Shut down the server after 24 hours if there was no player activity.
