@@ -64,7 +64,7 @@ public class EmptyShutdown extends JavaPlugin implements Listener {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "stop");
+                Bukkit.getScheduler().runTask(EmptyShutdown.this, () -> Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "stop"));
             }
         }, delay);
     }
